@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bod-cod-surrogate"
+version = "0.1.0"
+description = "Surrogate estimation of BOD and COD from routinely measured EC, pH and DO in five rivers around Dhaka (DoE data, 2017-2022)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+trees = ["xgboost", "lightgbm"]
+
+[tool.setuptools]
+packages = ["src"]

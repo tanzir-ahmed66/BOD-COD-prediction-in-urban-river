@@ -1,0 +1,14 @@
+# Monitoring data are not redistributed (see data/README.md)
+data/*
+!data/README.md
+
+# Written by the notebooks
+results/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
