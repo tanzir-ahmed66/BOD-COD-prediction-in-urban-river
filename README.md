@@ -18,8 +18,8 @@ The data are monthly monitoring records (2017–2022) from the Department of Env
 
 ## Design principles
 
-- **Validation that matches the intended use.** Leave-one-river-out tests transfer to an unmonitored river; forward-chaining by year tests prediction of a future year. Hyperparameters are tuned in an inner loop that mirrors the outer protocol, and scaling and PCA are refit inside every inner fold, so no information leaks from test data.
-- **A seasonal benchmark, not only the mean.** Every model is compared with a month-of-year climatology and a month-only regression.
+- Leave-one-river-out tests transfer to an unmonitored river; forward-chaining by year tests prediction of a future year. Hyperparameters are tuned in an inner loop that mirrors the outer protocol, and scaling and PCA are refit inside every inner fold, so no information leaks from test data.
+- Every model is compared with a month-of-year climatology and a month-only regression.
 
 
 ## Glossary
